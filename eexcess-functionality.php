@@ -3,7 +3,7 @@
  * Plugin Name: EEXCESS
  * Plugin URI: https://github.com/EEXCESS/eexcess
  * Description: Gives you the ability to enrich your blog with well-selected and high quality content
- * Version: 0.6.1
+ * Version: 0.7
  * Author: Nils Witt
  * Author URI: https://github.com/n-witt
  * License: Apache 2.0
