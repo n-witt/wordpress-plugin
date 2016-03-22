@@ -42,7 +42,7 @@
             "localsDir" : "js/lib/locales/",
             "errorMsg"  : "Insertion into the citationarea is prohibited"
          },
-         "version" : "0.6.1"
+         "version" : "0.7"
       };
    });
 }(EEXCESS.require, EEXCESS.define));

@@ -199,15 +199,19 @@ limitations under the License.
 
    // Setting up the onKeyUp event for the WYSIWYG editor
    function tiny_mce_before_init( $initArray ) {
+
       $initArray['setup'] = "function(ed) {
-         ed.onKeyDown.add(function(ed, e) {
-            require(['recommendationEventsHelper'], function(helper){
-               if(helper.assessKeystroke(e)){
-                  helper.getTextAndRecommend();
-               }
-            });
-         })
-      }";
+         (function(require, define){
+            ed.onKeyDown.add(function(ed, e) {
+               require(['recommendationEventsHelper'], function(helper){
+                  if(helper.assessKeystroke(e)){
+                     helper.getTextAndRecommend();
+                  }
+               });
+            })
+         }(EEXCESS.require, EEXCESS.define));
+      }
+   ";
       return $initArray;
    }
 
